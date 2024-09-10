@@ -1,0 +1,726 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Zurc Hub | Super Toilet Brawl",
+    LoadingTitle = "Zurc Hub",
+    LoadingSubtitle = "by Zurc",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Untitled",
+       Subtitle = "Key System",
+       Note = "No method of obtaining the key is provided",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ local MainTab = Window:CreateTab("Base Characters", 4483362458) -- Title, Image
+
+ local Button = MainTab:CreateButton({
+    Name = "Glitch Ninja Camerahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Glitch Camerahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Camerahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Titan Camerahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Speakerhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Speakerhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme TV Head",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme TV Head",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Cinemahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Cinemahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Speakerhead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Speakerhead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Camerhead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Camerhead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme TV Head 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme TV Head 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Drillhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Drillhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Clockhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Clockhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Drillhead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Drillhead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Tri-Head",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Tri-Head",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+
+ local MainTab = Window:CreateTab("OP Characters", 4483362458) -- Title, Image
+
+ local Button = MainTab:CreateButton({
+    Name = "Shadow TV Head",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Shadow TV Head",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Camerhead Woman 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Camerhead Woman 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Elite Camerahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Elite Camerahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "C-Penhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "C-Penhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Controlled Scientist Mech Toilet",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Controlled Scientist Mech Toilet",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Tri-Soldier Athena",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Tri-Soldier Athena",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Tri-Soldier Artemis",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Tri-Soldier Artemis",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Noob",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Noob",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Spider Camerahead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Spider Camerahead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Multiverse Supreme Speakerhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Multiverse Supreme Speakerhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Multiverse Supreme Camerahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Multiverse Supreme Camerahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Microwave Head 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Microwave Head 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Computerhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Computerhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Awakened Tri-Soldier Artemis",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Awakened Tri-Soldier Artemis",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Awakened Tri-Soldier Athena",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Awakened Tri-Soldier Athena",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Chairhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Chairhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Multiverse Supreme Speakerhead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Multiverse Supreme Speakerhead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Evil Supreme TV Head",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Evil Supreme TV Head",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Sonar Head 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Sonar Head 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Trophyhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Trophyhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Tri-Head 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Tri-Head 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Elite Juggernaut Astro Toilet",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Elite Juggernaut Astro Toilet",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Dragon Supreme Drillhead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Dragon Supreme Drillhead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Supreme Clockhead 2.0",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Supreme Clockhead 2.0",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Blooper Supreme Clockhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Blooper Supreme Clockhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "The Strongest Camerahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "The Strongest Camerahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Gilded Ninja Speakerhead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Gilded Ninja Speakerhead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "Gilded Ninja Camerahead",
+    Callback = function()
+        local args = {
+            [1] = "Basic Case",
+            [2] = {
+                ["Refund"] = 1250,
+                ["Pity"] = 0,
+                ["Item"] = "Gilded Ninja Camerahead",
+                ["Type"] = "Character"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").Events.RemoteEvents.ClaimPityItem:FireServer(unpack(args))
+        
+    end,
+ })
+
+ local MainTab = Window:CreateTab("NOTE (READ)", 4483362458) -- Title, Image
+
+ local Input = MainTab:CreateInput({
+    Name = "",
+    PlaceholderText = "Come back to github for more updates. (cZurcc).",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(Text)
+    -- The function that takes place when the input is changed
+    -- The variable (Text) is a string for the value in the text box
+    end,
+ })
