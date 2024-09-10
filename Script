@@ -712,6 +712,20 @@ local Window = Rayfield:CreateWindow({
         
     end,
  })
+ local MainTab = Window:CreateTab("Miscellaneous", 4483362458) -- Title, Image
+
+ local Button = MainTab:CreateButton({
+    Name = "120 FOV",
+    Callback = function()
+        workspace.CurrentCamera.FieldOfView = 120
+    end,
+ })
+ local Button = MainTab:CreateButton({
+    Name = "90 FOV",
+    Callback = function()
+        workspace.CurrentCamera.FieldOfView = 90
+    end,
+ })
 
  local MainTab = Window:CreateTab("NOTE (READ)", 4483362458) -- Title, Image
 
