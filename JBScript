@@ -1,0 +1,54 @@
+local player = game.Players.LocalPlayer
+local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+local uis = game:GetService("UserInputService")
+
+local amberLocations = {
+    Vector3.new(825.15, 459.86, -360.31),
+    Vector3.new(-622.94, 472.48, -293.77),
+    Vector3.new(622.95, 458.40, -636.75),
+    Vector3.new(667.10, 484.41, -738.09),
+    Vector3.new(-220.25, 468.31, -354.98),
+    Vector3.new(-281.05, 447.29, 243.13),
+    Vector3.new(261.91, 452.20, 728.46),
+    Vector3.new(431.88, 480.12, 817.99),
+    Vector3.new(699.83, 464.21, 733.24),
+    Vector3.new(734.06, 476.07, 803.16)
+}
+
+function teleportTo(position)
+    if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(position)
+        wait(2)
+    end
+end
+
+function holdButton(button)
+    local inputBegan = Instance.new("InputBegan")
+    inputBegan.UserInputType = Enum.UserInputType.Touch
+    inputBegan.Position = button.AbsolutePosition + button.AbsoluteSize / 2
+    uis.InputBegan:Fire(inputBegan)
+
+    wait(2)
+
+    local inputEnded = Instance.new("InputEnded")
+    inputEnded.UserInputType = Enum.UserInputType.Touch
+    inputEnded.Position = button.AbsolutePosition + button.AbsoluteSize / 2
+    uis.InputEnded:Fire(inputEnded)
+end
+
+function collectAmber()
+    for _, v in pairs(player.PlayerGui:GetDescendants()) do
+        if v:IsA("TextButton") and (string.find(v.Text, "Collect Amber") or string.find(v.Text, "Grab")) then
+            holdButton(v)
+            wait(1)
+        end
+    end
+end
+
+while true do
+    for _, location in ipairs(amberLocations) do
+        teleportTo(location)
+        collectAmber()
+        wait(3)
+    end
+end
